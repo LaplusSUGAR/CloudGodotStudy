@@ -1,0 +1,20 @@
+{
+    "name": "Godot Virtual Desktop",
+    "features": {
+        // 클라우드 리눅스에 가상 바탕화면과 브라우저 접속 기능을 설치합니다.
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["README.md"]
+        }
+    },
+    "portsAttributes": {
+        "6080": {
+            "label": "가상 모니터 화면",
+            "onAutoForward": "notify"
+        }
+    }
+}
